@@ -1,0 +1,23 @@
+<html>
+    <style type="text/css">
+    .error {
+        color: red;
+    }
+    </style>
+    <h1>New Post</h1>
+    <form method="post">
+        <label>Title</label>
+        <br />
+        <input name="title" text="{{title}}" />
+        <span class="error">{{title_err}}</span>
+        <br />
+        <br />
+        <label>Post</label>
+        <br />
+        <textarea name="text" rows="30" cols="50">{{text}}</textarea>
+        <span class="error">{{text_err}}</span>
+        <br />
+        <input type="submit" />
+    </form>
+
+</html>

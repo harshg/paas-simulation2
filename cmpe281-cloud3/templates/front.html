@@ -1,0 +1,36 @@
+<html>
+	<style type="text/css">
+	.new_post {
+		margin-left: 10px;
+		font-size: small;
+	}
+	.post_title {
+		font-weight: bold;
+	}
+	.post_created {
+		font-style: italic;
+		font-size: small;
+	}
+	.post_text {
+		width: 50%;
+	}
+	</style>
+
+	<span>
+		<h1> {{title}} </h1>
+	</span>
+	<span class="new_post">
+		<a href="/new">New Post</a>
+	</span>
+	<hr />
+	<br />
+	<br />
+	{%for post in posts%}
+	<div class="post_title"> {{post.title}} </div>
+	<div class="post_created"> {{post.created}} </div>
+	<hr />
+	<div class="post_text"> {{post.text}} </div>
+	<br />
+	<br />
+	{%endfor%}
+</html>
